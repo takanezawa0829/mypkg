@@ -14,7 +14,7 @@ def cb(message):
             break
         if (num + 1) == int(message.data / 2):
             n = message.data
-            print(message.data)
+            rospy.loginfo(message.data)
             is_prime_num = 1
             break
         if message.data % (num + 2) == 0:
